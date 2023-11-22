@@ -1,0 +1,8 @@
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\bin\Debug\Vector_Graphics_App_v2.exe.config
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\bin\Debug\Vector_Graphics_App_v2.exe
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\bin\Debug\Vector_Graphics_App_v2.pdb
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\obj\Debug\Vector_Graphics_App_v2.csproj.AssemblyReference.cache
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\obj\Debug\Vector_Graphics_App_v2.csproj.SuggestedBindingRedirects.cache
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\obj\Debug\Vector_Graphics_App_v2.csproj.CoreCompileInputs.cache
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\obj\Debug\Vector_Graphics_App_v2.exe
+C:\Users\vodka\Documents\0Projects\C#\Vector_Graphics_App_v2\Vector_Graphics_App_v2\obj\Debug\Vector_Graphics_App_v2.pdb
