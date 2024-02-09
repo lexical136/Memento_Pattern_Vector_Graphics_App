@@ -478,141 +478,165 @@ namespace Vector_Graphics_App_v2
             switch (request)
             {
                 case "rectangle":
-                    //rectangleC(x, y, width, height)
-                    //Console.WriteLine("Rectangle at Z"+z);
-                    n = "rect";
-                    Console.WriteLine("Rectangle X");
-                    //x = ran.Next(1, 500);
-                    x = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Rectangle Y");
-                    //y = ran.Next(1, 500);
-                    y = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Rectangle Height");
-                    //h = ran.Next(1, 500);
-                    h = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Rectangle Width");
-                    //w = ran.Next(1, 500);
-                    w = Convert.ToInt32(Console.ReadLine());
-                    Rectangle re = new Rectangle(n, x, y, h, w, lin, fil);
-                    svgList[z] = re;
-                    Console.WriteLine("Shape updated to rectangle");
+                    try
+                    {
+                        //rectangleC(x, y, width, height)
+                        //Console.WriteLine("Rectangle at Z"+z);
+                        n = "rect";
+                        Console.WriteLine("Rectangle X");
+                        //x = ran.Next(1, 500);
+                        x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Rectangle Y");
+                        //y = ran.Next(1, 500);
+                        y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Rectangle Height");
+                        //h = ran.Next(1, 500);
+                        h = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Rectangle Width");
+                        //w = ran.Next(1, 500);
+                        w = Convert.ToInt32(Console.ReadLine());
+                        Rectangle re = new Rectangle(n, x, y, h, w, lin, fil);
+                        svgList[z] = re;
+                        Console.WriteLine("Shape updated to rectangle");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "circle":
-                    //circleC(r, cx, cy)
-                    n = "circle";
-                    Console.WriteLine("circle CX");
-                    //x = ran.Next(1, 500);
-                    x = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("circle CY");
-                    //y = ran.Next(1, 500);
-                    y = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("circle radius");
-                    //h = ran.Next(1, 500);
-                    h = Convert.ToInt32(Console.ReadLine());
-                    Circle re2 = new Circle(n, x, y, h, lin, fil);
-                    svgList[z] = re2;
-                    Console.WriteLine("Shape updated to circle");
+                    try
+                    {
+                        //circleC(r, cx, cy)
+                        n = "circle";
+                        Console.WriteLine("circle CX");
+                        //x = ran.Next(1, 500);
+                        x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("circle CY");
+                        //y = ran.Next(1, 500);
+                        y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("circle radius");
+                        //h = ran.Next(1, 500);
+                        h = Convert.ToInt32(Console.ReadLine());
+                        Circle re2 = new Circle(n, x, y, h, lin, fil);
+                        svgList[z] = re2;
+                        Console.WriteLine("Shape updated to circle");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "ellipse":
-                    //Ellipse(rx, ry, cx, cy, z)
-                    n = "ellipse";
-                    Console.WriteLine("ellipse CX");
-                    //x = ran.Next(1, 500);
-                    x = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("ellipse CY");
-                    //y = ran.Next(1, 500);
-                    y = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("ellipse RX");
-                    //h = ran.Next(1, 500);
-                    h = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("ellipse RY");
-                    //w = ran.Next(1, 500);
-                    w = Convert.ToInt32(Console.ReadLine());
-                    Ellipse re3 = new Ellipse(n, x, y, h, w, lin, fil);
-                    svgList[z] = re3;
-                    Console.WriteLine("Shape updated to ellipse");
+                    try
+                    {
+                        //Ellipse(rx, ry, cx, cy, z)
+                        n = "ellipse";
+                        Console.WriteLine("ellipse CX");
+                        //x = ran.Next(1, 500);
+                        x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("ellipse CY");
+                        //y = ran.Next(1, 500);
+                        y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("ellipse RX");
+                        //h = ran.Next(1, 500);
+                        h = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("ellipse RY");
+                        //w = ran.Next(1, 500);
+                        w = Convert.ToInt32(Console.ReadLine());
+                        Ellipse re3 = new Ellipse(n, x, y, h, w, lin, fil);
+                        svgList[z] = re3;
+                        Console.WriteLine("Shape updated to ellipse");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "line":
-                    //Line(x1, y1, x2, y2, z)
-                    n = "line";
-                    Console.WriteLine("line X1");
-                    x = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("line Y1");
-                    y = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("line X2");
-                    h = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("line Y2");
-                    w = Convert.ToInt32(Console.ReadLine());
-                    Line re4 = new Line(n, x, y, h, w, lin, fil);
-                    svgList[z] = re4;
-                    Console.WriteLine("Shape updated to line");
+                    try
+                    {
+                        //Line(x1, y1, x2, y2, z)
+                        n = "line";
+                        Console.WriteLine("line X1");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("line Y1");
+                        y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("line X2");
+                        h = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("line Y2");
+                        w = Convert.ToInt32(Console.ReadLine());
+                        Line re4 = new Line(n, x, y, h, w, lin, fil);
+                        svgList[z] = re4;
+                        Console.WriteLine("Shape updated to line");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "polyline":
-                    //polylineC(...)
-                    string temp = "";
-                    bool loop2 = true;
-                    n = "polyline";
-                    Console.WriteLine("Intial point X1");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    Console.WriteLine("Intial point Y1");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    while (loop2 == true)
+                    try
                     {
-                        Console.WriteLine("Next point X or type done");
-                        temp = Console.ReadLine();
-                        if (temp == "done")
+                        //polylineC(...)
+                        string temp = "";
+                        bool loop2 = true;
+                        n = "polyline";
+                        Console.WriteLine("Intial point X1");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        Console.WriteLine("Intial point Y1");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        while (loop2 == true)
                         {
-                            loop2 = false;
+                            Console.WriteLine("Next point X or type done");
+                            temp = Console.ReadLine();
+                            if (temp == "done")
+                            {
+                                loop2 = false;
+                            }
+                            else
+                            {
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(temp));
+                                Console.WriteLine("Next point Y");
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(Console.ReadLine()));
+                            }
                         }
-                        else
-                        {
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(temp));
-                            Console.WriteLine("Next point Y");
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(Console.ReadLine()));
-                        }
+                        Polyline re5 = new Polyline(n, xy, lin, fil);
+                        svgList[z] = re5;
                     }
-                    Polyline re5 = new Polyline(n, xy, lin, fil);
-                    svgList[z] = re5;
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "polygon":
-                    //polygonC(...)
-                    temp = "";
-                    loop2 = true;
-                    n = "polygon";
-                    Console.WriteLine("Intial point X1");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    Console.WriteLine("Intial point Y1");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    while (loop2 == true)
+                    try
                     {
-                        Console.WriteLine("Next point X or type done");
-                        temp = Console.ReadLine();
-                        if (temp == "done")
+                        //polygonC(...)
+                        string temp = "";
+                        bool loop2 = true;
+                        n = "polygon";
+                        Console.WriteLine("Intial point X1");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        Console.WriteLine("Intial point Y1");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        while (loop2 == true)
                         {
-                            loop2 = false;
+                            Console.WriteLine("Next point X or type done");
+                            temp = Console.ReadLine();
+                            if (temp == "done")
+                            {
+                                loop2 = false;
+                            }
+                            else
+                            {
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(temp));
+                                Console.WriteLine("Next point Y");
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(Console.ReadLine()));
+                            }
                         }
-                        else
-                        {
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(temp));
-                            Console.WriteLine("Next point Y");
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(Console.ReadLine()));
-                        }
+                        Polyline re6 = new Polyline(n, xy, lin, fil);
+                        svgList[z] = re6;
                     }
-                    Polyline re6 = new Polyline(n, xy, lin, fil);
-                    svgList[z] = re6;
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
             }
             Console.WriteLine("Invalid update!");
