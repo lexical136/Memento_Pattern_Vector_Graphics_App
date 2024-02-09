@@ -288,144 +288,168 @@ namespace Vector_Graphics_App_v2
             switch (request)
             {
                 case "rectangle":
-                    //rectangleC(x, y, width, height)
-                    n = "rect";
-                    Console.WriteLine("Rectangle X Coordinate");
-                    x = Convert.ToInt32(Console.ReadLine());
-                    //x = ran.Next(1, 500);
-                    Console.WriteLine("Rectangle Y Coordinate");
-                    y = Convert.ToInt32(Console.ReadLine());
-                    //y = ran.Next(1, 500);
-                    Console.WriteLine("Rectangle Height");
-                    h = Convert.ToInt32(Console.ReadLine());
-                    //h = ran.Next(1, 500);
-                    Console.WriteLine("Rectangle Width");
-                    //w = ran.Next(1, 500);
-                    w = Convert.ToInt32(Console.ReadLine());
-                    Rectangle re = new Rectangle(n, x, y, h, w, lin, fil);
-                    svgList.Add(re);
-                    Console.WriteLine("Rectangle added");
+                    try
+                    {
+                        //rectangleC(x, y, width, height)
+                        n = "rect";
+                        Console.WriteLine("Rectangle X Coordinate");
+                        x = Convert.ToInt32(Console.ReadLine());
+                        //x = ran.Next(1, 500);
+                        Console.WriteLine("Rectangle Y Coordinate");
+                        y = Convert.ToInt32(Console.ReadLine());
+                        //y = ran.Next(1, 500);
+                        Console.WriteLine("Rectangle Height");
+                        h = Convert.ToInt32(Console.ReadLine());
+                        //h = ran.Next(1, 500);
+                        Console.WriteLine("Rectangle Width");
+                        //w = ran.Next(1, 500);
+                        w = Convert.ToInt32(Console.ReadLine());
+                        Rectangle re = new Rectangle(n, x, y, h, w, lin, fil);
+                        svgList.Add(re);
+                        Console.WriteLine("Rectangle added");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "circle":
-                    //circleC(r, cx, cy)
-                    n = "circle";
-                    Console.WriteLine("Circle X Coordinate");
-                    //h = ran.Next(1, 500);
-                    h = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Circle Y Coordinate");
-                    //y = ran.Next(1, 500);
-                    y = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Circle radius");
-                    //x = ran.Next(1, 500);
-                    x = Convert.ToInt32(Console.ReadLine());
-                    Circle re2 = new Circle(n, x, y, h, lin, fil);
-                    svgList.Add(re2);
-                    Console.WriteLine("Circle added");
+                    try
+                    {
+                        //circleC(r, cx, cy)
+                        n = "circle";
+                        Console.WriteLine("Circle X Coordinate");
+                        //h = ran.Next(1, 500);
+                        h = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Circle Y Coordinate");
+                        //y = ran.Next(1, 500);
+                        y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Circle radius");
+                        //x = ran.Next(1, 500);
+                        x = Convert.ToInt32(Console.ReadLine());
+                        Circle re2 = new Circle(n, x, y, h, lin, fil);
+                        svgList.Add(re2);
+                        Console.WriteLine("Circle added");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "ellipse":
-                    //Ellipse(rx, ry, cx, cy, z)
-                    n = "ellipse";
-                    Console.WriteLine("Ellipse X Coordinate");
-                    //x = ran.Next(1, 500);
-                    x = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Ellipse Y Coordinate");
-                    //y = ran.Next(1, 500);
-                    y = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Ellipse RX");
-                    //h = ran.Next(1, 500);
-                    h = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Ellipse RY");
-                    //w = ran.Next(1, 500);
-                    w = Convert.ToInt32(Console.ReadLine());
-                    Ellipse re3 = new Ellipse(n, x, y, h, w, lin, fil);
-                    svgList.Add(re3);
-                    Console.WriteLine("Ellipse added");
+                    try
+                    {
+                        //Ellipse(rx, ry, cx, cy, z)
+                        n = "ellipse";
+                        Console.WriteLine("Ellipse X Coordinate");
+                        //x = ran.Next(1, 500);
+                        x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ellipse Y Coordinate");
+                        //y = ran.Next(1, 500);
+                        y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ellipse RX");
+                        //h = ran.Next(1, 500);
+                        h = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Ellipse RY");
+                        //w = ran.Next(1, 500);
+                        w = Convert.ToInt32(Console.ReadLine());
+                        Ellipse re3 = new Ellipse(n, x, y, h, w, lin, fil);
+                        svgList.Add(re3);
+                        Console.WriteLine("Ellipse added");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "line":
-                    //Line(x1, y1, x2, y2, z)
-                    n = "line";
-                    Console.WriteLine("Line X1 Coordinate");
-                    //x = ran.Next(1, 500);
-                    x = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Line Y1 Coordinate");
-                    //y = ran.Next(1, 500);
-                    y = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Line X2 Coordinate");
-                    //h = ran.Next(1, 500);
-                    h = Convert.ToInt32(Console.ReadLine());
-                    Console.WriteLine("Line Y2 Coordinate");
-                    //w = ran.Next(1, 500);
-                    w = Convert.ToInt32(Console.ReadLine());
-                    Line re4 = new Line(n, x, y, h, w, lin, fil);
-                    svgList.Add(re4);
-                    Console.WriteLine("Line added");
+                    try
+                    {
+                        //Line(x1, y1, x2, y2, z)
+                        n = "line";
+                        Console.WriteLine("Line X1 Coordinate");
+                        //x = ran.Next(1, 500);
+                        x = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Line Y1 Coordinate");
+                        //y = ran.Next(1, 500);
+                        y = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Line X2 Coordinate");
+                        //h = ran.Next(1, 500);
+                        h = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Line Y2 Coordinate");
+                        //w = ran.Next(1, 500);
+                        w = Convert.ToInt32(Console.ReadLine());
+                        Line re4 = new Line(n, x, y, h, w, lin, fil);
+                        svgList.Add(re4);
+                        Console.WriteLine("Line added");
+                    }
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "polyline":
-                    //polylineC(...)
-                    string temp = "";
-                    bool loop2 = true;
-                    n = "polyline";
-                    Console.WriteLine("Intial point X1 Coordinate");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    Console.WriteLine("Intial point Y1 Coordinate");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    while (loop2 == true)
+                    try
                     {
-                        Console.WriteLine("Enter the next point's X Coordinate or type done");
-                        temp = Console.ReadLine();
-                        if (temp == "done")
+                        //polylineC(...)
+                        string temp = "";
+                        bool loop2 = true;
+                        n = "polyline";
+                        Console.WriteLine("Intial point X1 Coordinate");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        Console.WriteLine("Intial point Y1 Coordinate");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        while (loop2 == true)
                         {
-                            loop2 = false;
+                            Console.WriteLine("Enter the next point's X Coordinate or type done");
+                            temp = Console.ReadLine();
+                            if (temp == "done")
+                            {
+                                loop2 = false;
+                            }
+                            else
+                            {
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(temp));
+                                Console.WriteLine("Enter the point's Y Coordinate");
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(Console.ReadLine()));
+                            }
                         }
-                        else
-                        {
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(temp));
-                            Console.WriteLine("Enter the point's Y Coordinate");
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(Console.ReadLine()));
-                        }
+                        Polyline re5 = new Polyline(n, xy, lin, fil);
+                        svgList.Add(re5);
                     }
-                    Polyline re5 = new Polyline(n, xy, lin, fil);
-                    svgList.Add(re5);
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
 
                 case "polygon":
-                    //polygonC(...)
-                    temp = "";
-                    loop2 = true;
-                    n = "polygon";
-                    Console.WriteLine("Intial point X1 Coordinate");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    Console.WriteLine("Intial point Y1 Coordinate");
-                    //xy.Add(ran.Next(1, 500));
-                    xy.Add(Convert.ToInt32(Console.ReadLine()));
-                    while (loop2 == true)
+                    try
                     {
-                        Console.WriteLine("Enter the next point's X Coordinate or type done");
-                        temp = Console.ReadLine();
-                        if (temp == "done")
+                        //polygonC(...)
+                        string temp = "";
+                        bool loop2 = true;
+                        n = "polygon";
+                        Console.WriteLine("Intial point X1 Coordinate");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        Console.WriteLine("Intial point Y1 Coordinate");
+                        //xy.Add(ran.Next(1, 500));
+                        xy.Add(Convert.ToInt32(Console.ReadLine()));
+                        while (loop2 == true)
                         {
-                            loop2 = false;
+                            Console.WriteLine("Enter the next point's X Coordinate or type done");
+                            temp = Console.ReadLine();
+                            if (temp == "done")
+                            {
+                                loop2 = false;
+                            }
+                            else
+                            {
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(temp));
+                                Console.WriteLine("Enter the point's Y Coordinate");
+                                //xy.Add(ran.Next(1, 500));
+                                xy.Add(Convert.ToInt32(Console.ReadLine()));
+                            }
                         }
-                        else
-                        {
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(temp));
-                            Console.WriteLine("Enter the point's Y Coordinate");
-                            //xy.Add(ran.Next(1, 500));
-                            xy.Add(Convert.ToInt32(Console.ReadLine()));
-                        }
+                        Polygon re6 = new Polygon(n, xy, lin, fil);
+                        svgList.Add(re6);
                     }
-                    Polygon re6 = new Polygon(n, xy, lin, fil);
-                    svgList.Add(re6);
+                    catch (Exception ex) { Console.WriteLine("Invalid input"); }
                     return (svgList);
             }
             Console.WriteLine("Invalid shape!");
